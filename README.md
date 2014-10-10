@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shin1ohno/jani-strip_maker.svg?branch=master)](https://travis-ci.org/shin1ohno/jani-strip_maker)
+
 # Jani::StripMaker
 
 TODO: Write a gem description
