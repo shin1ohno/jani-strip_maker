@@ -1,6 +1,9 @@
-[![Build Status](https://travis-ci.org/shin1ohno/jani-strip_maker.svg?branch=master)](https://travis-ci.org/shin1ohno/jani-strip_maker)
-
 # Jani::StripMaker
+
+[![Build Status](https://travis-ci.org/shin1ohno/jani-strip_maker.svg?branch=master)](https://travis-ci.org/shin1ohno/jani-strip_maker)
+[![Code Climate](https://codeclimate.com/github/shin1ohno/jani-strip_maker/badges/gpa.svg)](https://codeclimate.com/github/shin1ohno/jani-strip_maker)
+[![Code Climate](https://codeclimate.com/github/shin1ohno/jani-strip_maker/badges/gpa.svg)](https://codeclimate.com/github/shin1ohno/jani-strip_maker)
+[![Dependency Status](https://gemnasium.com/shin1ohno/jani-strip_maker.svg)](https://gemnasium.com/shin1ohno/jani-strip_maker)
 
 TODO: Write a gem description
 
