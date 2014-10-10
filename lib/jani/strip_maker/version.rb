@@ -1,0 +1,5 @@
+module Jani
+  module StripMaker
+    VERSION = "0.0.1"
+  end
+end
