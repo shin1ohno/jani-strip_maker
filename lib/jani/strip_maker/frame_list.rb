@@ -4,6 +4,7 @@ require "RMagick"
 
 class Jani::StripMaker::FrameList
   include Magick
+  extend Forwardable
 
   attr_reader :images
 
@@ -33,4 +34,6 @@ class Jani::StripMaker::FrameList
       end
     end
   end
+
+  def_delegators :@images, :+, :-, :<<, :[], :at, :[]=, :empty?, :each, :each_with_index, :include?, :all?, :any?, :sort, :uniq, :select, :collect, :find
 end
