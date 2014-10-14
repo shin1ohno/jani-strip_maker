@@ -5,6 +5,14 @@
 [![Test Coverage](https://codeclimate.com/github/shin1ohno/jani-strip_maker/badges/coverage.svg)](https://codeclimate.com/github/shin1ohno/jani-strip_maker)
 [![Dependency Status](https://gemnasium.com/shin1ohno/jani-strip_maker.svg)](https://gemnasium.com/shin1ohno/jani-strip_maker)
 
+You can use cli
+
+```bash
+./strip_maker from_movie_to_strips --input_file path_to_file --fps N --height N --width N
+```
+
+or you can use from ruby code
+
 ```ruby
 # build encode option
 transcode_options = Jani::StripMaker::TranscodeOptions.new
