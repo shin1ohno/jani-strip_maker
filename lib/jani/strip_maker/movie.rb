@@ -10,18 +10,24 @@ class Jani::StripMaker::Movie
   def initialize(movie_filepath: movie_filepath, transcode_options: transcode_options)
     @movie_filepath = (movie_filepath)
     @transcode_options = transcode_options
+    @_frame_list = []
   end
 
   def to_frame_list
+    return @_frame_list unless @_frame_list.empty?
     movie_full_path = movie_full_path()
     Dir.mktmpdir do |dir|
       Dir.chdir(dir) do |dir|
         execute_ffmpeg_command(movie_full_path)
         images = ImageList.new(*Dir.glob("*\.#{FILE_NAME_EXTENTION}"))
         # TODO: raise error if images is empty
-        Jani::StripMaker::FrameList.new(images: images)
+        @_frame_list = Jani::StripMaker::FrameList.new(images: images)
       end
     end
+  end
+
+  def to_strips
+    to_frame_list().to_strips()
   end
 
   private

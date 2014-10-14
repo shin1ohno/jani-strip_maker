@@ -5,7 +5,18 @@
 [![Test Coverage](https://codeclimate.com/github/shin1ohno/jani-strip_maker/badges/coverage.svg)](https://codeclimate.com/github/shin1ohno/jani-strip_maker)
 [![Dependency Status](https://gemnasium.com/shin1ohno/jani-strip_maker.svg)](https://gemnasium.com/shin1ohno/jani-strip_maker)
 
-TODO: Write a gem description
+```ruby
+# build encode option
+transcode_options = Jani::StripMaker::TranscodeOptions.new
+transcode_options.fps = 15
+transcode_options.width = 320
+transcode_options.fps = 180
+
+# Get strip files in current directory from movie file
+Jani::StripMaker::Movie.new(
+  "path/to/movieFile.mov", transcode_options
+).to_strips.each(&:write)
+```
 
 ## Installation
 
@@ -22,10 +33,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install jani-strip_maker
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 

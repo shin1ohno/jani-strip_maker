@@ -20,4 +20,13 @@ describe Jani::StripMaker::Movie do
       expect(transcoded).not_to be_empty
     end
   end
+
+  describe "#to_strips" do
+    it "retunrs strips" do
+      strips = movie.to_strips
+      expect(strips).not_to be_empty
+      expect(strips[0]).to be_a_kind_of(Jani::StripMaker::Strip)
+      expect(strips).to have(3).items
+    end
+  end
 end
