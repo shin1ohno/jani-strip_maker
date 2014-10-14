@@ -17,7 +17,7 @@ class Jani::StripMaker::Strip
   end
 
   def write(filename = nil)
-    name = filename || self.filename()
+    name = filename || filename()
     to_rmagic_image_list.append(true).write(name)
   end
 
