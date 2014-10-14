@@ -13,7 +13,7 @@ class Jani::StripMaker::Strip
 
   def big_enough?
     return false if frames_count.zero?
-    pixels / frames_count * (frames_count + 1) > Jani::StripMaker::MAX_PIXELS_FOR_MOBILE_SAFARI
+    pixels / frames_count * (frames_count + 1.0) > Jani::StripMaker::MAX_PIXELS_FOR_MOBILE_SAFARI
   end
 
   def write(filename = nil)
