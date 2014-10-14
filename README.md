@@ -8,7 +8,7 @@
 You can use cli
 
 ```bash
-./strip_maker from_movie_to_strips --input_file path_to_file --fps N --height N --width N
+strip_maker from_movie_to_strips --input_file path_to_file --fps N --height N --width N
 ```
 
 or you can use from ruby code
