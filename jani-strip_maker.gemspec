@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Jani::StripMaker::VERSION
   spec.authors       = ["Shin'ichi Ohno"]
   spec.email         = ["shin1ohno@me.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "Make jani strip from movie file"
+  spec.description   = "Make jani(https://github.com/shin1ohno/jani) strip from movie file."
+  spec.homepage      = "https://github.com/shin1ohno/jani-strip_maker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
