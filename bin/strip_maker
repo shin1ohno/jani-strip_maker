@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require "rubygems"
+# Prepares the $LOAD_PATH by adding to it lib directories of all gems in the
+# project's bundle:
+require "bundler/setup"
+require "jani/strip_maker/cli"
+
+Jani::StripMaker::CLI.start(ARGV)
