@@ -28,6 +28,16 @@ Jani::StripMaker::Movie.new(
 
 ## Installation
 
+### Requirements
+
+You have to have ```ffmpeg``` and ```imagemagick``` installed in your system.
+
+If you use mac, just ```brew install ffmpeg imagemagich``` will work fine.
+
+You can use [dockerfile](https://github.com/shin1ohno/janiConverter/blob/master/Dockerfile) for Rails system setup.
+
+### gem installation
+
 Add this line to your application's Gemfile:
 
 ```ruby
