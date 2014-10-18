@@ -12,7 +12,7 @@ class Jani::StripMaker::TranscodeOptions
   end
 
   def to_scale_option
-    "-vf scale=#{@height}:#{@width}"
+    "-vf scale=#{@width}:#{@height}"
   end
 
   def to_fps_option
