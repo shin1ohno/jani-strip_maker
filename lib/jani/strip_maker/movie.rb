@@ -19,7 +19,7 @@ class Jani::StripMaker::Movie
     Dir.mktmpdir do |tmp_dir|
       Dir.chdir(tmp_dir) do |dir|
         execute_ffmpeg_command(movie_full_path)
-        images = ImageList.new(*Dir.glob("*\.#{FILE_NAME_EXTENTION}"))
+        images = ImageList.new(*Dir.glob("*\.#{FILE_NAME_EXTENTION}")).sort_by(&:filename)
         # TODO: raise error if images is empty
         @_frame_list = Jani::StripMaker::FrameList.new(images: images)
       end
