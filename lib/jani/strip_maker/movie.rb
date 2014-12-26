@@ -7,7 +7,9 @@ class Jani::StripMaker::Movie
 
   include Magick
 
-  def initialize(movie_filepath: movie_filepath, transcode_options: transcode_options)
+  def initialize(movie_filepath: "", transcode_options: nil)
+    raise "Specify file path of movie and transcode options" if movie_filepath.empty? || transcode_options.nil?
+
     @movie_filepath = (movie_filepath)
     @transcode_options = transcode_options
     @_frame_list = []
